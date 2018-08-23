@@ -98,3 +98,22 @@ div.case-study-images img {
     margin-bottom: 50px;
     border: 1px solid #dddddd;
 }
+
+/*Footer*/
+ul.social-media-menu {
+    text-align: right;
+}
+ul.social-media-menu li {
+    display: inline-block;
+}
+.social-media-menu li a:before{
+    display: inline-block;
+    font-family: 'Fontawesome';
+    content:'\f0a9';
+    font-size: 1.25rem;
+}
+.social0media-menu li a[href*="facebook.com"]::before{content:'/f09a';}
+.social0media-menu li a[href*="twitter.com"]::before{content:'/f099';}
+.social0media-menu li a[href*="linkedin.com"]::before{content:'/f0e1';}
+
+/*END Footer*/
