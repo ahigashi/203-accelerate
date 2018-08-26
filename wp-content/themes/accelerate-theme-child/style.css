@@ -111,9 +111,98 @@ ul.social-media-menu li {
     font-family: 'Fontawesome';
     content:'\f0a9';
     font-size: 1.25rem;
+    padding: .3em;
+    line-height: 1em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: #3b3b3b;
 }
-.social0media-menu li a[href*="facebook.com"]::before{content:'/f09a';}
-.social0media-menu li a[href*="twitter.com"]::before{content:'/f099';}
-.social0media-menu li a[href*="linkedin.com"]::before{content:'/f0e1';}
+.social-media-menu li a[href*="mailto"]::before{ content: '\f0e0'; }
+.social-media-menu li a[href*="facebook.com"]::before{ content: '\f09a'; }
+.social-media-menu li a[href*="twitter.com"]::before{ content: '\f099'; }
+.social-media-menu li a[href*="dribbble.com"]::before{ content: '\f17d'; }
+.social-media-menu li a[href*="plus.google.com"]::before{ content: '\f0d5'; }
+.social-media-menu li a[href*="pinterest.com"]::before{ content: '\f0d2'; }
+.social-media-menu li a[href*="github.com"]::before{ content: '\f09b'; }
+.social-media-menu li a[href*="tumblr.com"]::before{ content: '\f173'; }
+.social-media-menu li a[href*="youtube.com"]::before{ content: '\f167'; }
+.social-media-menu li a[href*="flickr.com"]::before{ content: '\f16e'; }
+.social-media-menu li a[href*="vimeo.com"]::before{ content: '\f194'; }
+.social-media-menu li a[href*="instagram.com"]::before{ content: '\f16d'; }
+.social-media-menu li a[href*="linkedin.com"]::before{ content: '\f0e1'; }
+.social-media-menu li a[href*="codepen"]::before{ content: '\f1cb'; }
 
 /*END Footer*/
+
+/*Accessibility*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip:rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color:#f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.6);
+    clip: auto !important;
+    color:#21759b;
+    display:block;
+    font-size: 14px;
+    font-size:0.875rem;
+    font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+/*END Accessibiltiy*/
+
+/*Contact Page*/
+.contact-page .main-content {
+    width: 70%;
+    max-width: 38em;
+    margin: 0 auto;
+    
+}
+.contact-page h2 {
+    font-size: 1.5em;
+}
+.nf-form-fields-required {
+    display: none;
+}
+.ninja-forms-req-symbol {
+    display: none;
+}
+.nf-field-label label {
+    font-size: .9em;
+}
+.nf-field input[type="button"] {
+    float: right;
+    background: #45ac9d;
+}
+
+#nf-field-1-container {
+    float: left;
+    width:48%;
+}
+#nf-field-2-container {
+    float: right;
+    width:48%;
+    clear: none;
+}
+
+
+/*END Contact Page*/
